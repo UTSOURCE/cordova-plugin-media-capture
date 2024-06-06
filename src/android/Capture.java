@@ -498,7 +498,7 @@ public class Capture extends CordovaPlugin {
             obj.put("name", fp.getName());
             obj.put("fullPath", Uri.fromFile(fp));
             if (url != null) {
-                obj.put("localURL", url.toString());
+                obj.put("localURL", data);
             }
             // Because of an issue with MimeTypeMap.getMimeTypeFromExtension() all .3gpp files
             // are reported as video/3gpp. I'm doing this hacky check of the URI to see if it
